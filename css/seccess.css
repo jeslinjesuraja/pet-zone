@@ -1,0 +1,122 @@
+/* ===== RESET ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* ===== BODY ===== */
+body{
+    background:linear-gradient(135deg,#f5f7fa,#e4ebf5);
+    min-height:100vh;
+}
+
+/* ===== TOP BAR ===== */
+.topbar{
+    background:#1f1f1f;
+    padding:15px 30px;
+}
+
+.topbar a{
+    color:#fff;
+    text-decoration:none;
+    font-size:15px;
+}
+
+.topbar a:hover{
+    text-decoration:underline;
+}
+
+/* ===== CENTER BOX ===== */
+.wrapper{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:60px 15px;
+}
+
+/* ===== CARD ===== */
+.card{
+    background:#fff;
+    width:420px;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.12);
+    text-align:center;
+}
+
+/* ===== ICON ===== */
+.icon{
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+/* ===== TITLE ===== */
+.card h2{
+    color:#222;
+    margin-bottom:20px;
+}
+
+/* ===== DETAILS ===== */
+.details{
+    text-align:left;
+    margin:20px 0;
+}
+
+.details p{
+    font-size:15px;
+    color:#444;
+    margin:10px 0;
+}
+
+.details b{
+    color:#111;
+}
+
+/* ===== IMAGE ===== */
+.pet-img{
+    width:100%;
+    border-radius:14px;
+    margin-top:10px;
+}
+
+/* ===== BUTTONS ===== */
+.actions{
+    margin-top:25px;
+}
+
+.actions a{
+    display:inline-block;
+    margin:8px;
+    padding:12px 28px;
+    border-radius:30px;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:500;
+}
+
+.btn-primary{
+    background:#0a64da;
+    color:white;
+}
+
+.btn-primary:hover{
+    background:#084fb0;
+}
+
+.btn-secondary{
+    background:#e9eef7;
+    color:#0a64da;
+}
+
+.btn-secondary:hover{
+    background:#dbe5f5;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:480px){
+    .card{
+        width:100%;
+    }
+}

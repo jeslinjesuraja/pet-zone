@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pet Details | Pet-Zone</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/css/details.css">
+</head>
+
+<body>
+
+<div class="header">
+    🐾 Pet Details
+</div>
+
+<div class="container">
+
+    <!-- IMAGE GALLERY -->
+    <div class="image-section">
+        <div class="main-image">
+            <img id="mainPetImage" src="https://images.unsplash.com/photo-1558788353-f76d92427f16" alt="Golden Retriever">
+        </div>
+
+        <div class="thumbnails">
+            <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16" onclick="changeImage(this)">
+            <img src="/assets/dog1.jpg" onclick="changeImage(this)">
+            <img src="/assets/dog2.jpg" onclick="changeImage(this)">
+            <img src="/assets/dog4.jpg" onclick="changeImage(this)">
+            <img src="/assets/dog5.jpg" onclick="changeImage(this)">
+            <img src="/assets/dog.jpg" onclick="changeImage(this)">
+            
+        </div>
+    </div>
+
+    <!-- DETAILS -->
+    <div class="details">
+        <h2>Golden Retriever</h2>
+        <p><strong>Age:</strong> 6 months</p>
+        <p><strong>Gender:</strong> Male</p>
+        <p><strong>Breed:</strong> Golden Retriever</p>
+        <p><strong>Vaccinated:</strong> Yes</p>
+        <p><strong>Description:</strong> Friendly, playful, healthy and well-trained puppy looking for a caring home.</p>
+
+        <div class="price">₹15,000</div>
+
+        <div class="buttons">
+            <a href="/html/seller.html">
+            <button class="contact">Contact Seller</button>
+            </a>
+            <a href="/html/pets.html">
+                <button class="back">Back to Listings</button>
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<script>
+function changeImage(element){
+    document.getElementById("mainPetImage").src = element.src;
+}
+</script>
+
+</body>
+</html>
